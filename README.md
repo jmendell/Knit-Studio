@@ -1,4 +1,4 @@
-## Monomyth Starter:
+## Knit Studio Theme - Sage 9:
 
 * Once the starter theme is pulled down, in the theme root directory, run 'yarn && yarn build'.
 * Change devUrl in config.json under resources > assets > config.json. (Use .test as TLD)
