@@ -1,0 +1,78 @@
+/** Import variables */
+@import "common/variables";
+
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *
+ * If using `postcss-import`, you should import this line from it's own file:
+ *
+ * @import "./tailwind-preflight.css";
+ *
+ * See: https://github.com/tailwindcss/tailwindcss/issues/53#issuecomment-341413622
+ */
+ @tailwind base;
+
+
+/** Import everything from autoload */
+@import "./autoload/**/*";
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+
+// Import Slick
+@import "~slick-carousel/slick/slick.scss";
+@import "~slick-carousel/slick/slick-theme.scss";
+@import "~venobox/venobox/venobox.css";
+.venoframe.vbvid {margin: 0 auto;}
+/**
+ * This injects any component classes registered by Tailwind plugins.
+ */
+@tailwind components;
+
+/** Import theme styles */
+@import "common/global";
+@import "common/variables";
+
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/wp-classes";
+@import "components/fonts";
+@import "components/join-the-team";
+@import "components/sliders";
+@import "components/modals";
+@import "components/animations";
+@import "components/callout";
+
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/tinymce";
+@import "layouts/navigation";
+
+@import "pages/home";
+@import "pages/projects";
+@import "pages/project-archive";
+@import "pages/project-detail";
+@import "pages/team";
+@import "pages/approach";
+@import "pages/studio";
+@import "pages/news";
+@import "pages/services";
+@import "pages/contact";
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ */
+@tailwind utilities;

@@ -1,0 +1,51 @@
+// Home Projects Slider
+.home__project-slider-section{
+
+		.slick-prev{
+			display: none !important;
+		}
+		.slick-next{
+			// position: relative;
+			right: 25px;
+			top: 80%;
+			border-right: 2px solid #fff;
+			border-bottom:2px solid #fff;
+			transform:rotate(-45deg);
+			z-index:15;
+			@screen md {
+				top:88%;
+			}
+			@screen lg {
+				top:92%;
+				right:30px;
+			}
+			&:before{
+				font-family:inherit;
+				display: none;
+			}
+		}
+
+}
+
+//Studio image slider
+.studio__image-slider-container{
+	.image-slider__inner{
+		@apply relative;
+		@screen md {
+			left:-100px;
+		}
+	}
+	.slick-track{
+		@apply flex;
+	}
+	.image-slide{
+		@apply flex justify-center mx-1;
+	}
+}
+
+.text-gallery__gallery-container{
+	img{
+		margin:0 auto;
+
+	}
+}

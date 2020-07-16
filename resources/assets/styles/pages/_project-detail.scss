@@ -1,0 +1,35 @@
+.single-project-detail{
+
+	.header-image{
+		img{
+			width:100vw;
+		}
+	}
+
+	.content-text{
+		h2,h3,h4,h5,h6{
+			font-family: 'Centra No2';
+		  src: url('../fonts/CentraNo2-Book.woff2') format('woff2'),
+		      url('../fonts/CentraNo2-Book.woff') format('woff');
+		  font-weight: 500;
+		  font-style: normal;
+		  @apply mb-1 uppercase;
+		}
+		p{
+			@apply mb-3;
+		}
+	}
+
+}
+
+.post-navigation {
+	@apply pt-50;
+	
+	a {
+		@apply .centra-medium .uppercase .text-knit_raspberry;
+
+		&:hover {
+			@apply .text-knit_navy
+		}
+	}
+}

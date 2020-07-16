@@ -1,0 +1,237 @@
+// Raspberry -> transparent hover
+.hover--transparent{
+  @screen lg {
+    transition: color .4s ease, background-color .4s ease, border .4s ease;
+    @apply border-2 border-transparent;
+    &:hover{
+      @apply border-knit_raspberry text-knit_raspberry bg-transparent;
+    }
+
+  }
+}
+
+// Transparent -> raspberry hover
+.hover--rasp{
+  @screen lg {
+    transition: background-color .4s ease, color .4s ease;
+    &:hover{
+      @apply text-white bg-knit_raspberry;
+    }
+  }
+}
+
+// blue -> white hover
+.hover--white{
+  @screen lg {
+    transition: color .4s ease, background-color .4s ease, border .4s ease;
+    @apply border-2 border-transparent;
+    &:hover{
+      @apply text-white bg-transparent border-white;
+    }
+  }
+}
+
+.hover--text-navy{
+  @screen lg {
+    transition: color .4s ease;
+    &:hover{
+      @apply text-knit_navy;
+    }
+  }
+}
+
+.hover--text-white{
+  @screen lg {
+    transition: color .4s ease;
+    &:hover{
+      @apply text-white;
+    }
+  }
+}
+
+.hover--text-rasp{
+  @screen lg {
+    transition: color .4s ease;
+    &:hover{
+      @apply text-knit_raspberry;
+    }
+  }
+}
+
+// Nav Animations ------->
+
+// Large navigation items hover -> transform up
+.nav-large__single{
+  transition: .4s;
+  @screen lg {
+    &:after{
+      content:'';
+      @apply bg-knit_raspberry h-full w-full absolute top-0;
+      opacity:0;
+      transition:.4s;
+      z-index:1;
+      pointer-events:none;
+    }
+    &:hover{
+      transform:translateY(-25px);
+      &:after{
+        opacity:.3;
+      }
+    }
+  }
+}
+
+//Small navigation menu items underline on hover
+.nav-small__single{
+  @screen lg {
+    @apply flex flex-col;
+    &:after{
+      @apply bg-knit_navy relative;
+      transition:.4s;
+      opacity:0;
+      bottom:-10px;
+      content:'';
+      height:2px;
+      width:100%;
+    }
+    &:hover{
+      &:after{
+        transform:translateY(-8px);
+        opacity:1;
+      }
+    }
+  }
+}
+
+// Home Animations --->
+
+//Hero nav item animations
+
+.hero-nav-item{
+  @apply my-2 py-1 px-4 uppercase text-knit_navy bg-knit_gray1;
+  position:relative;
+  &:after{
+    content:'';
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    width:8px;
+    transition:.4s;
+  }
+  @screen md {
+    &:hover{
+      @apply px-8;
+      &:after{
+        width: 20px;
+      }
+    }
+  }
+  &.hero-nav-item--blue{
+    transition: padding-left .4s ease 0s, padding-right .4s ease 0s;
+    &:after{
+      @apply bg-knit_blue;
+      transition: width .6s ease 0;
+    }
+  }
+  &.hero-nav-item--purple{
+    transition: padding-left .4s ease 0s, padding-right .4s ease 0s;
+    &:after{
+      @apply bg-knit_purple;
+    }
+  }
+  &.hero-nav-item--yellow{
+    transition: padding-left .4s ease 0s, padding-right .4s ease 0s;
+    &:after{
+      @apply bg-knit_yellow;
+    }
+  }
+  &.hero-nav-item--green{
+    transition: padding-left .4s ease 0s, padding-right .4s ease 0s;
+    &:after{
+      @apply bg-knit_green;
+    }
+  }
+}
+
+// studio page line swoop styles
+.studio-swoop-1{
+  left: -250px;
+  top:-10%;
+  @screen sm {
+    top: 22%;
+  }
+}
+
+.studio-swoop-2{
+  opacity: 0;
+  bottom:-10%;
+  @screen xs {
+    right:-50%;
+  }
+  @screen sm {
+    right:-70%;
+  }
+  @screen smallmd {
+    right:-25%;
+    bottom:-7%;
+    width:100%;
+  }
+}
+
+.studio-swoop-mobile-2{
+  bottom:-7%;
+  right:-5%;
+  opacity:0;
+}
+
+
+.studio-hero-image{
+  min-width: 100%;
+  min-height: 100%;
+  @screen md {
+    min-width: 700px;
+    min-height:440px;
+  }
+}
+
+// approach page swoop styles
+
+.approach-swoop-1{
+  width:60%;
+  left:-25%;
+  z-index:1;
+}
+
+.approach-swoop-2{
+  top:-97px;
+  right:-5px;
+  width:50%;
+  z-index:12;
+  @screen smd {
+    width:initial;
+    right:-100px;
+  }
+  @screen lg {
+  }
+}
+
+// services swoop
+.service-swoop{
+  display: none;
+  z-index:-1;
+  @screen md {
+    top: -18%;
+    display: block;
+    left:-91%;
+  }
+  @screen mdlglg {
+    left:-70%;
+  }
+  @screen lg {
+    left: -51%;
+  }
+  @screen xl {
+    left:-36%;
+  }
+}

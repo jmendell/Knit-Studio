@@ -1,0 +1,134 @@
+// Centra Bold
+@font-face {
+    font-family: 'Centra No2';
+    src: url('../fonts/CentraNo2-Bold.woff2') format('woff2'),
+        url('../fonts/CentraNo2-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+// Centra Bold Extra Bold
+@font-face {
+    font-family: 'Centra No2';
+    src: url('../fonts/CentraNo2-Extrabold.woff2') format('woff2'),
+        url('../fonts/CentraNo2-Extrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Centra No2';
+    src: url('../fonts/CentraNo2-Medium.woff2') format('woff2'),
+        url('../fonts/CentraNo2-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Centra No2';
+    src: url('../fonts/CentraNo2-Book.woff2') format('woff2'),
+        url('../fonts/CentraNo2-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Centra No2';
+    src: url('../fonts/CentraNo2-Hairline.woff2') format('woff2'),
+        url('../fonts/CentraNo2-Hairline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Centra No2';
+    src: url('../fonts/CentraNo2-Light.woff2') format('woff2'),
+        url('../fonts/CentraNo2-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Centra No2';
+    src: url('../fonts/CentraNo2-Thin.woff2') format('woff2'),
+        url('../fonts/CentraNo2-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Centra No2';
+    src: url('../fonts/CentraNo2-Black.woff2') format('woff2'),
+        url('../fonts/CentraNo2-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+// Classes to define fonts
+.centra-black{
+  font-family: 'Centra No2';
+  src: url('../fonts/CentraNo2-Black.woff2') format('woff2'),
+      url('../fonts/CentraNo2-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+.centra-bold{
+  font-family: 'Centra No2';
+  src: url('../fonts/CentraNo2-Bold.woff2') format('woff2'),
+      url('../fonts/CentraNo2-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.centra-book{
+  font-family: 'Centra No2';
+  src: url('../fonts/CentraNo2-Book.woff2') format('woff2'),
+      url('../fonts/CentraNo2-Book.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+.centra-ex-bold{
+  font-family: 'Centra No2';
+  src: url('../fonts/CentraNo2-Extrabold.woff2') format('woff2'),
+      url('../fonts/CentraNo2-Extrabold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+.centra-hairline{
+  font-family: 'Centra No2';
+  src: url('../fonts/CentraNo2-Hairline.woff2') format('woff2'),
+      url('../fonts/CentraNo2-Hairline.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.centra-light{
+  font-family: 'Centra No2';
+  src: url('../fonts/CentraNo2-Light.woff2') format('woff2'),
+      url('../fonts/CentraNo2-Light.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+.centra-medium{
+  font-family: 'Centra No2';
+  src: url('../fonts/CentraNo2-Medium.woff2') format('woff2'),
+      url('../fonts/CentraNo2-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.centra-thin{
+  font-family: 'Centra No2';
+  src: url('../fonts/CentraNo2-Thin.woff2') format('woff2'),
+      url('../fonts/CentraNo2-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+    @apply .centra-book;
+}

@@ -1,0 +1,28 @@
+.page-template-default{
+
+	.general-page-container{
+		@screen xs {
+			@apply mx-25;
+		}
+		@screen md {
+			@apply max-w-3xl my-0 mx-auto;
+		}
+
+		h1,h2,h3,h4,h5,h6{
+			@apply text-knit_navy text-2xl mb-25;
+			font-family: 'Centra No2';
+			font-weight: 300;
+			font-style: normal;
+		}
+		p, span{
+			@apply text-lg my-5 text-knit_gray4;
+		  font-family: 'Centra No2';
+		  src: url('../fonts/CentraNo2-Book.woff2') format('woff2'),
+		      url('../fonts/CentraNo2-Book.woff') format('woff');
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+	}
+
+}

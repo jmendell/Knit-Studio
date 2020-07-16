@@ -1,0 +1,37 @@
+
+
+.team-staff{
+	justify-content: center;
+	@apply mb-50;
+
+	.team-member{
+		@apply px-6 my-3 text-knit_navy;
+
+		@screen sm {
+			width: 50%;
+			max-width: 400px;
+		}
+
+		.single-team__image{
+			@apply mb-2;
+		}
+		.team-member__text {
+			.name-association{
+				@apply flex flex-col;
+			}
+			.member__extra{
+				@apply text-sm my-2;
+			}
+			.member__job-title{
+				@apply text-base;
+			}
+		}
+	}
+
+	.team-member--has-image {
+		@screen sm {
+			width: 50%;
+			max-width: 400px;
+		}
+	}
+}

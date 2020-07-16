@@ -1,0 +1,122 @@
+.projects-page-container{
+
+	.projects-line{
+		@apply absolute top-0;
+		left:-60%;
+		height:100%;
+		z-index:-1;
+		@screen md {
+			left:-25%;
+		}
+	}
+
+	// Project specific colors
+	.projects--live{
+		.project__color{
+			@apply bg-knit_blue;
+		}
+	}
+	.projects--learn{
+		.project__color{
+			@apply bg-knit_yellow;
+		}
+	}
+	.projects--work{
+		.project__color{
+			@apply bg-knit_purple;
+		}
+	}
+	.projects--play{
+		.project__color{
+			@apply bg-knit_green;
+		}
+	}
+
+
+	.projects__project-type{
+		@apply flex;
+		@screen xs {
+			@apply mb-125;
+		}
+		@screen md {
+			@apply mb-200;
+		}
+
+		.project__color{
+			height:4px;
+			width:75px;
+		}
+
+		.project-content__inner-container{
+			@apply w-11/12;
+			padding:25px 30px 25px 30px;
+				@screen md{
+					padding:40px 50px 40px 30px;
+					@apply text-left items-start;
+				}
+		}
+
+	// Odd Rows
+		&:nth-child(odd){
+			@screen xs {
+				@apply flex-col-reverse;
+			}
+			@screen md {
+				@apply flex-row-reverse;
+			}
+
+			.project__content-container{
+				@apply relative;
+				@screen xs{
+					@apply flex justify-center w-full;
+				}
+				@screen md{
+					@apply w-1/3;
+				}
+				.project-content__inner-container{
+					@apply absolute bg-knit_gray1;
+					@screen xs {
+						@apply flex flex-col items-center text-center;
+					}
+					@screen md {
+						right:-75px;
+					}
+				}
+			}
+		}
+	// Even Rows
+		&:nth-child(even){
+			@screen xs {
+				@apply flex-col-reverse;
+			}
+			@screen md {
+				@apply flex-row;
+			}
+
+			.project__content-container{
+				@apply relative;
+				@screen xs{
+					@apply flex justify-center w-full;
+				}
+				@screen md{
+					@apply w-1/3;
+				}
+				.project-content__inner-container{
+					@apply absolute bg-knit_gray1;
+					@screen xs {
+						@apply flex flex-col items-center text-center;
+					}
+					@screen md {
+						left:-75px;
+					}
+				}
+			}
+		}
+
+	}
+
+	.projects__image {
+		@apply inline-block;
+	}
+
+}

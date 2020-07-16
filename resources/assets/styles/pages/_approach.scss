@@ -1,0 +1,44 @@
+.client-logo-inner-container{
+	.single-logo-container{
+		@apply flex justify-center my-5;
+		@screen xs {
+			flex-basis: 47%;
+			@apply items-center;
+		}
+		@screen md {
+			flex-basis: 25%;
+		}
+	}
+	.client-logo{
+		width:125px;
+		@screen md {
+			width: 150px;
+		}
+	}
+}
+
+	.client-logo-container{
+		.client-logo{
+			filter:grayscale(1);
+		}
+	}
+
+.focus-section{
+	.focus-nav{
+
+		.hero-nav-item{
+			@apply bg-white;
+		}
+
+	}
+
+	.focus-nav-content{
+		.focus-content{
+			display: none;
+		}
+		.content__copy{
+			@apply text-lg text-knit_navy;
+		}
+	}
+
+}

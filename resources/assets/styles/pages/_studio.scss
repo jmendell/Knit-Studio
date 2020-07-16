@@ -1,0 +1,44 @@
+.client-video-container{
+	.play-icon{
+		@apply my-25;
+		width:50px;
+		@screen md {
+			width:75px;
+		}
+	}
+}
+
+.text-gallery__text-container{
+	.copy{
+		margin-bottom:25px;
+	}
+}
+
+.latest-news-section{
+	.latest__blue-section{
+		@screen xs {
+			height:250px;
+		}
+		@screen md {
+			height:400px;
+		}
+	}
+	.latest__article-section{
+		@screen md {
+			// height: 500px;
+		}
+		.article-inner{
+			position: relative;
+			top:-75px;
+			@screen md {
+				top:-150px;
+			}
+		}
+	}
+}
+
+.studio__text-gallery{
+	.slick-list{
+		@apply h-full w-full;
+	}
+}

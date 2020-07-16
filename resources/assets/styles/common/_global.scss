@@ -1,0 +1,17 @@
+.knit-container{
+	max-width:90rem; //1440px
+	margin:0 auto;
+	overflow:hidden;
+	position:relative;
+}
+
+.absolute-center{
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translateX(-50%) translatey(-50%) ;
+}
+
+.content p {
+	margin-bottom: 25px;
+}

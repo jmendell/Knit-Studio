@@ -1,0 +1,33 @@
+.location-detail{
+	@apply flex flex-col items-center;
+	flex-basis: 33%;
+	@screen xs {
+		@apply mb-50;
+	}
+	@screen md {
+		@apply mb-0
+	}
+	.location-title{
+		@apply mb-2;
+	}
+	.location-address, .office-phone{
+		@apply text-lg text-knit_gray4;
+		@screen xs {
+			@apply text-center;
+		}
+		@screen md {
+			@apply text-left;
+		}
+	}
+	.location-address{
+		@apply mb-4;
+	}
+}
+
+.join-copy{
+	margin-bottom: 25px;
+}
+
+.join-image {
+	opacity: 0;
+}

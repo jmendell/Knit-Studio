@@ -1,0 +1,55 @@
+.nf-form-cont{
+
+	.nf-form-fields-required{
+		display: none;
+	}
+
+	.nf-field-label{
+		margin-bottom:0 !important;
+		.ninja-forms-req-symbol{
+			display: none;
+		}
+	}
+
+	label{
+		font-family: 'Centra No2';
+	  src: url('../fonts/CentraNo2-Book.woff2') format('woff2'),
+	      url('../fonts/CentraNo2-Book.woff') format('woff');
+	  font-weight: 300 !important;
+	  font-style: normal;
+
+	  @apply text-knit_gray4 text-lg;
+	}
+
+
+	input[type='text'],input[type='email'],input[type='tel'], textarea{
+		border:none !important;
+		border-bottom:1px solid #688096 !important;
+		background:transparent !important;
+		padding-left:0 !important;
+		color:#688096 !important;
+	}
+	.submit-wrap{
+		text-align: center;
+		input{
+			background-color: #F53362 !important;
+			border-radius:25px;
+			padding:0 50px;
+			cursor: pointer;
+			font-weight:500;
+			@screen md {
+				font-weight:100;
+			}
+			@screen lg {
+				transition:.4s;
+				border: 2px solid transparent !important;
+				&:hover{
+					border-color:#F53362 !important;
+					color:#F53362 !important;
+					background-color:transparent !important;
+				}
+
+			}
+		}
+	}
+}

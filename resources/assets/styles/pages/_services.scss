@@ -1,0 +1,45 @@
+	.service__list-item{
+		max-width:1000px;
+		margin:0 auto;
+		@apply flex flex-col mb-75;
+		@screen md {
+			@apply flex-row mb-200;
+		}
+		@screen lg {
+			@apply px-100;
+		}
+		&:nth-child(odd){
+			@screen md {
+				@apply flex-row-reverse;
+			}
+			.icon-container{
+				@screen md {
+					@apply justify-center;
+				}
+			}
+		}
+		.icon-container{
+
+			@screen md {
+				@apply w-1/4 items-center;
+			}
+		}
+		.service__content-container{
+			@screen md {
+				@apply w-3/4;
+			}
+		}
+	}
+
+	.service-icon{
+		width:100px;
+		@screen md {
+			width:125px;
+		}
+		&.architecture-icon, &.design-icon{
+			width:125px;
+			@screen md {
+				width:150px;
+			}
+		}
+	}

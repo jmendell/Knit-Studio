@@ -1,0 +1,34 @@
+.callout {
+
+  h2, p {
+    @apply .text-knit_navy;
+  }
+
+  .btn {
+    transition: background-color 0.25s ease, color 0.25s ease, border .4s ease;
+    @apply text-knit_raspberry border-knit_raspberry border-2 inline-block;
+
+    &:hover {
+      @apply text-white bg-knit_raspberry;
+    }
+  }
+}
+
+.callout--is-dark {
+  .callout__content {
+    @apply bg-knit_raspberry;
+  }
+
+  h2, p {
+    @apply .text-white;
+  }
+
+  .btn {
+    transition: background-color 0.25s ease, color 0.25s ease, border .4s ease;
+    @apply bg-knit_navy text-white border-knit_raspberry border-2 border-transparent inline-block;
+
+    &:hover {
+      @apply text-white bg-transparent border-white;
+    }
+  }
+}
